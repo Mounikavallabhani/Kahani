@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_store"
+        android:icon="@drawable/homeone"
+        android:title=""
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:id="@+id/navigation_delivary"
+        android:icon="@drawable/homeone"
+        android:title=""/>
+
+
+    <item
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:id="@+id/navigation_wallet"
+        android:icon="@drawable/homeone"
+        android:title=" " />
+    <item
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:id="@+id/navigation_delivary1"
+        android:icon="@drawable/homeone"
+        android:title="" />
+
+
+    <item
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:id="@+id/navigation_wallet1"
+        android:icon="@drawable/homeone"
+        android:title="" />
+
+</menu>

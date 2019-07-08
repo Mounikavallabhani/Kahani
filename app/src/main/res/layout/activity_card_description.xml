@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CardDescription">
+   <!-- <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+               android:focusableInTouchMode="true"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:focusable="true"
+                    android:layout_margin="3dp"
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="0.7"
+                    android:src="@drawable/dammy"
+                    android:scaleType="fitXY"/>
+                <LinearLayout
+                    android:layout_weight="1.3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/titlename"
+                        android:textSize="@dimen/mainheadding"
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lines Men Draw"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:padding="5dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/textviewbackground"
+                            android:textSize="12dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Historical"/>
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:padding="5dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/textviewbackground"
+                            android:textSize="12dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Life"/>
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:padding="5dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/textviewbackground"
+                            android:textSize="13dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Social"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_margin="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/person"/>
+                        <TextView
+                            android:textSize="@dimen/mainheadding"
+                            android:layout_margin="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lines Men Draw"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RatingBar
+                            android:layout_margin="5dp"
+                            android:id="@+id/rtbProductRating"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:numStars="5"
+                            android:rating="3.5"
+                            android:isIndicator="false"
+                            style="@style/foodRatingBar"
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:layout_margin="6dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4.5"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reading Time :"/>
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7 mins"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            &lt;!&ndash;2nd starts&ndash;&gt;
+            <View
+
+
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/editextbackground"/>
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:paddingRight="20dp"
+                    android:paddingLeft="50dp"
+                    android:drawableLeft="@drawable/download"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/mainheadding"
+                    android:gravity="center"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Download"/>
+                <TextView
+                    android:paddingRight="50dp"
+                    android:paddingLeft="50dp"
+                    android:drawableLeft="@drawable/download"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/mainheadding"
+                    android:gravity="center"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Library"/>
+
+
+            </LinearLayout>
+
+            <View
+
+
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/editextbackground"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/mainheadding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Summary"/>
+                <TextView
+                    android:textColor="@color/black"
+                    android:lineSpacingExtra="5dp"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dummy"/>
+                <TextView
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/mainheadding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="699 reads"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/mainheadding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Published Date :"/>
+                    <TextView
+                        android:textSize="15sp"
+                        android:layout_margin="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="29 october 2018"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/read"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:text="Read"
+                android:background="@color/redcolor"
+                android:layout_margin="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+            <LinearLayout
+              android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+
+                    android:layout_width="180dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/editextbackground"/>
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/person"/>
+                <View
+
+                    android:layout_width="200dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/editextbackground"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RatingBar
+                    android:id="@+id/rtbProductRating1"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:numStars="5"
+                    android:rating="3.5"
+                    android:isIndicator="false"
+                    style="@style/foodRatingBar"/>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/layoutone"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_margin="10dp"
+                        android:background="@drawable/edittext_shape"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/mainheadding"
+                            android:layout_margin="10dp"
+                            android:id="@+id/cancel"
+                           android:layout_toLeftOf="@id/submit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cancel"/>
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/mainheadding"
+                            android:layout_margin="10dp"
+                            android:id="@+id/submit"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Submit"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layouttwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:focusableInTouchMode="true"
+                    android:textColor="@color/redcolor"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Review Content"/>
+                </LinearLayout>
+
+                <View
+
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/editextbackground"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/mainheadding"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reviews"/>
+                <android.support.v7.widget.RecyclerView
+                    android:layout_margin="5dp"
+                    android:id="@+id/reviews"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>-->
+   </LinearLayout>

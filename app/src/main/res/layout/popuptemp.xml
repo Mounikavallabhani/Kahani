@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/about_boxes"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel_popupwindow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/title_cancel_layout"
+           android:gravity="center_vertical"
+           android:layout_alignParentTop="true"
+           android:layout_marginBottom="20dp">
+           <TextView
+               android:id="@+id/textone"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="5dp"
+               android:layout_toLeftOf="@id/cancel_2_nano_popup"
+               android:singleLine="true"
+               android:text="Story Name displays here Story Name displays here "
+               android:textColor="#000"
+               android:textSize="18dp" />
+           <ImageView
+               android:id="@+id/cancel_2_nano_popup"
+               android:layout_width="14dp"
+               android:layout_height="14dp"
+               android:layout_centerVertical="true"
+               android:layout_alignParentRight="true"
+               android:src="@drawable/close" />
+
+       </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/texttwo"
+            android:layout_marginBottom="10dp"
+            android:background="@color/lightBackground" />
+
+
+
+
+        <EditText
+            android:id="@+id/texttwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_cancel_layout"
+            android:background="@drawable/outerbox_popup_sharpborder"
+            android:hint="Search and Select Writers"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/textthree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/texttwo"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/outerbox_popup_sharpborder"
+            android:hint="Enter Your Text"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#000" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textthree"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cancel_nano_popup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/submit_nano_popupwindow"
+                android:padding="5dp"
+                android:text="cancel"
+                android:textAllCaps="true"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/submit_nano_popupwindow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/commentsbox"
+                android:backgroundTint="@color/button2"
+                android:padding="5dp"
+                android:text="send"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

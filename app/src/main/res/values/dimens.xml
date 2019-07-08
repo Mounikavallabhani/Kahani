@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mainheadding">18dp</dimen>
+    <dimen name="size_30">30dp</dimen>
+    <dimen name="size_35">35dp</dimen>
+
+</resources>

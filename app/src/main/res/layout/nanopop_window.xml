@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bottomsharp_uppercurve"
+    android:paddingTop="3dp"
+    app:cardUseCompatPadding="true"
+    android:elevation="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/rad_grp_nano_popup_window">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/share_title_nano_popup"
+                android:text="Share This Nano Story"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/share_title_nano_popup"
+                android:weightSum="3">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:padding="5dp"
+                    android:id="@+id/suggest_card"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/suggest_img"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/greyman"
+                        android:layout_gravity="center_vertical"/>
+                    <!--<TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Suggest"
+                        android:layout_marginLeft="10dp"
+                        android:textAllCaps="true"
+                        android:textSize="20dp"
+                        android:textColor="#000" />-->
+                    <TextView
+                        android:id="@+id/suggest_nano"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/suggest_img"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:text="SUGGEST" />
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:id="@+id/suggest_right_arrow"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/uparrow"
+                        android:layout_gravity="center_vertical"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightBackground"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:padding="5dp"
+                    android:id="@+id/community_card"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/community_img"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/multipeople"
+                        android:layout_gravity="center_vertical"/>
+                    <!--<TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Suggest"
+                        android:layout_marginLeft="10dp"
+                        android:textAllCaps="true"
+                        android:textSize="20dp"
+                        android:textColor="#000" />-->
+                    <TextView
+                        android:id="@+id/community_nano"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/community_img"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:text="COMMUNITY" />
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:id="@+id/community_right_arrow"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/uparrow"
+                        android:layout_gravity="center_vertical"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightBackground"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:padding="5dp"
+                    android:id="@+id/share_card"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/share_img"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/greyshare"
+                        android:layout_gravity="center_vertical"/>
+                    <!--<TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Suggest"
+                        android:layout_marginLeft="10dp"
+                        android:textAllCaps="true"
+                        android:textSize="20dp"
+                        android:textColor="#000" />-->
+                    <TextView
+                        android:id="@+id/share_nano"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/share_img"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:text="SHARE" />
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:id="@+id/share_right_arrow"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/uparrow"
+                        android:layout_gravity="center_vertical"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

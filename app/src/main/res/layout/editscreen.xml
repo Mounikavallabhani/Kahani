@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/mainheadding"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Your Post"/>
+        <View
+            android:layout_margin="3dp"
+            android:background="@color/editextbackground"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </View>
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:textSize="@dimen/mainheadding"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Text :"/>
+            <EditText
+                android:singleLine="true"
+                android:fontFamily="monospace"
+                android:id="@+id/House"
+
+                android:paddingLeft="10dp"
+                android:maxLines="1"
+                android:textSize="14dp"
+                android:hint=" Post your link here....."
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/cedittextshape"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/submit"
+            android:textColor="@color/white"
+            android:background="#3c8dbc"
+            android:text="Submit"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

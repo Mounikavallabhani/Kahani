@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.translation"
+    android:orientation="vertical">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/outerbox_sharpedge">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="fill_vertical">
+            <ImageView
+                android:id="@+id/left_transpage"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_back_black_48dp" />
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:id="@+id/plussymbol_transpage"
+                android:layout_toRightOf="@id/left_transpage"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"
+                android:src="@drawable/added"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/ledreadtitle"
+                android:layout_toRightOf="@id/plussymbol_transpage"
+                android:fontFamily="sans-serif"
+                android:singleLine="true"
+                android:text="Languages"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/more_led"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:src="@drawable/ic_search_black_24dp" />
+
+           <!-- <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/more_led"
+                android:gravity="center"
+                android:id="@+id/share_led"
+                android:src="@drawable/share1" />-->
+            <!--<ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/share_led"
+                android:gravity="center"
+                android:src="@drawable/downarrow"/>-->
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:clipToPadding="false"
+        android:id="@+id/languagetranslation">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

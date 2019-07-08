@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll"
+            android:background="@color/button2">
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <LinearLayout
+                    android:id="@+id/searchlinearlayout"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.80">
+                    <EditText
+                        android:textColor="@color/black"
+                        android:background="@drawable/searchbackground"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="14dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:drawablePadding="10dp"
+                        android:textColorHint="#000"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Search Stories, Writers, Life..."
+                        android:singleLine="true"
+                        android:drawableLeft="@drawable/ic_search_black_24dp" />
+
+                </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/bell_home"
+                        android:layout_width="0dp"
+                        android:layout_height="19dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/alarm" />
+                <ImageView
+                    android:layout_weight="0.1"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/translate"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/translate"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+            </LinearLayout>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:elevation="3dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tabMode="fixed"
+                        app:tabSelectedTextColor="@color/button2"
+                        app:tabTextColor="@color/black"
+                        android:background="@color/white"
+                        android:fitsSystemWindows="true"
+                        app:tabGravity="fill"/>
+                </android.support.design.widget.AppBarLayout>
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+
+
+
+
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

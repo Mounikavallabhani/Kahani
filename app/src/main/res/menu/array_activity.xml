@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/qty"
+        android:title="quantity"></item>
+    <item
+        android:id="@+id/pcs1"
+        android:title="1 pcs"> 1 pcs </item>
+    <item
+        android:id="@+id/pcs2"
+        android:title="2 pcs"> 2 pcs </item>
+    <item
+        android:id="@+id/pcs3"
+        android:title="3 pcs"> 3 pcs </item>
+    <item
+        android:id="@+id/pcs4"
+        android:title="4 pcs"> 4 pcs</item>
+    <item
+        android:id="@+id/pcs5"
+        android:title="5 pcs"> 5 pcs </item>
+
+</menu>

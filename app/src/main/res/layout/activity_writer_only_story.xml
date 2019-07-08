@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.WriterOnlyStory">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@drawable/outerbox_sharpedge">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/left_writer_only_story"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:src="@drawable/ic_arrow_back_black_48dp" />
+
+            <TextView
+                android:id="@+id/toolBarText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/left_writer_only_story"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@id/left_writer_only_story"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text=" Story Title"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/more_series"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:src="@drawable/more1" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/more_series"
+                android:gravity="center"
+                android:id="@+id/share_series"
+                android:src="@drawable/share1" />
+            <!--<ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/share_series"
+                android:gravity="center"
+                android:id="@+id/download_series"
+                android:src="@drawable/downarrow" />-->
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="10dp"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Edit info"
+                    android:id="@+id/editInfoStory"
+                    android:textSize="18dp"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="#000"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="5dp"/>
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/rightarrow"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:backgroundTint="#fff"
+            android:padding="10dp"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Edit Content"
+                    android:id="@+id/editContentStory"
+                    android:textSize="18dp"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="#000"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="5dp"/>
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/rightarrow"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="10dp"
+            android:backgroundTint="#fff"
+            app:cardCornerRadius="5dp"
+            android:id="@+id/viewAsReaderStory"
+            android:layout_margin="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="View As Reader"
+
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="5dp"/>
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/rightarrow"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+       <!-- <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radios"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:weightSum="2">
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:buttonTint="#fff"
+                android:id="@+id/onGoing"
+                android:textColor="#fff"
+                android:text="On Going"/>
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:id="@+id/completedStory"
+                android:text="Completed"
+                android:buttonTint="#fff"
+                android:textColor="#fff"/>
+
+        </RadioGroup>-->
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

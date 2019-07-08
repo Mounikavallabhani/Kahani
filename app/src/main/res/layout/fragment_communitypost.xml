@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/person"/>
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="@dimen/mainheadding"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hi"/>
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="@dimen/mainheadding"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mounika"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/liner_links"
+                android:layout_marginLeft="@dimen/size_30"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:scaleType="center"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/link"/>
+                 <TextView
+                     android:id="@+id/text_links"
+                     android:textColor="@color/button2"
+                     android:layout_width="wrap_content"
+                     android:text="Link s"
+                     android:textSize="@dimen/mainheadding"
+                     android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/size_30"
+                android:id="@+id/liner_quotes"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/link"/>
+
+                <TextView
+                    android:id="@+id/text_quotes"
+                    android:layout_width="wrap_content"
+                    android:text="QUOTES"
+                    android:textColor="#0A0A0A"
+                    android:textSize="18dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/liner_text"
+                android:layout_marginLeft="@dimen/size_30"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/link"/>
+                <TextView
+                    android:id="@+id/text_text"
+                    android:layout_width="wrap_content"
+                    android:text="TEXT"
+                    android:textSize="18dp"
+                    android:textColor="#0A0A0A"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_links_data"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:singleLine="true"
+                    android:fontFamily="monospace"
+                    android:id="@+id/House"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:maxLines="1"
+                    android:textSize="14dp"
+                    android:hint=" Post your link here....."
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/cedittextshape"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#E26565"
+                    android:layout_height="wrap_content"
+                    android:text="Please Enter URL"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                    <LinearLayout
+                        android:singleLine="true"
+                        android:orientation="horizontal"
+                        android:fontFamily="monospace"
+                        android:id="@+id/link_descreption"
+                        android:background="@drawable/cedittextshape"
+                        android:maxLines="1"
+                        android:weightSum="10"
+                        android:layout_width="0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="10"
+                        android:layout_height="50dp">
+                        <EditText
+                            android:singleLine="true"
+                            android:fontFamily="monospace"
+                            android:id="@+id/link_data"
+                            android:maxLines="1"
+                            android:paddingLeft="10dp"
+                            android:textSize="14dp"
+                            android:hint="  Enter your link description...."
+                            android:background="@drawable/cedittextshape"
+                            android:layout_width="0dp"
+                            android:layout_weight="8"
+                            android:layout_height="match_parent" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:background="#00a65a"
+                            android:gravity="center"
+                            android:layout_weight="2"
+                            android:textSize="14dp"
+                            android:textColor="#ffffff"
+                            android:text="POST"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+                 </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_quotes_data"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+                <EditText
+                    android:singleLine="true"
+                    android:fontFamily="monospace"
+                    android:id="@+id/type_quotes"
+                    android:layout_marginTop="10dp"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:hint=" Type QUOTES"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/cedittextshape"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp" />
+                 </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="10"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+                <Space
+                    android:background="@drawable/cedittextshape"
+                    android:layout_width="0dp"
+                    android:layout_weight="8"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:background="@drawable/postdata"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:textSize="14dp"
+                    android:textColor="#ffffff"
+                    android:text="POST"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_text_data"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+                <EditText
+                    android:singleLine="true"
+                    android:fontFamily="monospace"
+                    android:layout_marginTop="10dp"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:hint=" Type Message"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/cedittextshape"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="10"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+                <Space
+                    android:background="@drawable/cedittextshape"
+                    android:layout_width="0dp"
+                    android:layout_weight="8"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:background="@drawable/postdata"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:textSize="14dp"
+                    android:textColor="#ffffff"
+                    android:text="POST"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/communitypost"
+                android:nestedScrollingEnabled="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

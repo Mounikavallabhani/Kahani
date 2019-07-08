@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Kahani</string>
+    <string name="loginheading">Sign in to start your session</string>
+    <string name="redheading">By clicking Signup, you agree our Terms &amp; Privacy policy</string>
+    <string name="languageheading">Choose your language to start reading</string>
+    <string name="languageheading2">(We will use the selected language to present you with the best collection we have in store.)</string>
+    <string name="forgottext">Forgot Password ?</string>
+    <string name="storiestext">Let us know what you enjoy and we will tailor your kahani experience</string>
+    <string name="dummy">You could call our mukher jee para ancient.In 1947,it was an hours ride from khulna by a horse tongaa.A bicycle took about froty mintues.boys who had abiycle,kept it squeaky clean and flaunted...</string>
+    <string name="dummy2">I really enjcvbnmbnv bboyed the way you follow one character through  x</string>
+
+    <string name="storie">Children love stories. It’s true!
+
+And every child enjoys it for different reasons – be it travelling to magical worlds, learning new concepts, going on adventures, etc.
+
+With stories, the possibilities are truly limitless — your child can join Tintin as he travels the world, solves mysteries and nabs crooks; your child can study at Hogwarts and learn about life through the magical world of Harry Potter; your child can go back in time and become an active participant at Akbar’s court.
+
+The list goes on!
+     Children love stories. It’s true!
+
+And every child enjoys it for different reasons – be it travelling to magical worlds, learning new concepts, going on adventures, etc.
+
+With stories, the possibilities are truly limitless — your child can join Tintin as he travels the world, solves mysteries and nabs crooks; your child can study at Hogwarts and learn about life through the magical world of Harry Potter; your child can go back in time and become an active participant at Akbar’s court.
+
+The list goes on!
+    </string>
+    <string-array name="quntity">
+        <item>QTY</item>
+        <item> 1 pcs </item>
+        <item> 2 pcs </item>
+        <item> 3 pcs </item>
+        <item> 4 pcs</item>
+        <item> 5 pcs </item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
+

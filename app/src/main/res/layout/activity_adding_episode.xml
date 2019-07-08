@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.addingEpisode"
+    android:background="#fafafa"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/outerbox_sharpedge">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/left"
+                    android:id="@+id/back_addingEpisode"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Next"
+                    android:textAllCaps="true"
+                    android:id="@+id/nextPageEpisode"
+                    android:textSize="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:src="@drawable/dammy" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/title_addEpi"
+                android:hint="Title"
+                android:textColorHint="@color/redcolor"
+                android:paddingLeft="20dp"
+                android:inputType="textNoSuggestions" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColorHint="@color/redcolor"
+                android:id="@+id/titleinEnglish_addEpi"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="20dp"
+                android:hint="Title In English" />
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

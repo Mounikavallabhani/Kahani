@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/genersimage"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/dammy"/>
+
+    <TextView
+        android:id="@+id/generstext"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="20dp"
+        android:text="qewrtertewtewt" />
+
+</RelativeLayout>
